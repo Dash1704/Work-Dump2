@@ -1,7 +1,11 @@
-import Title from "../title/Title"
+import Logo from "../logo/Logo";
+import Title from "../title/Title";
 
 export default function HomeBody() {
   return(
-   <Title/>
+    <div>
+      <Logo />
+      <Title/>
+    </div>
   )
 }
