@@ -1,0 +1,15 @@
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.bio {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
