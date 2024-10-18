@@ -6,8 +6,8 @@ export default function Logo() {
       <Image 
         src="/images/poo-emoji.png"
         alt="Website Logo"
-        width={400}
-        height={400}
+        width={300}
+        height={300}
       />
     </div>
   )

@@ -1,0 +1,10 @@
+.boxContainer {
+  width: 313px;
+  height: 54px;
+  border-color: #a9a9a9;
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: text;
+  margin-top: 17px;
+}
