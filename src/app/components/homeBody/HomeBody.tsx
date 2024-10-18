@@ -14,9 +14,15 @@ export default function HomeBody() {
     <div className={styles.pageContainer}>
       <Logo />
       <Title/>
-      <InputBox />
-      <InputBox />
-      <InputBox />
+      <InputBox 
+        placeholder="Eg 30000"
+      />
+      <InputBox 
+        placeholder="E.g 35"
+      />
+      <InputBox 
+        placeholder="E.g 5.03"
+      />
       <BogButton 
         onClick={pressButton}
         text="Click Here"  
