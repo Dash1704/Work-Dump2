@@ -1,8 +1,7 @@
 .bogButtonContainer{
   height: 54px;
   width: 207px;
-  background-color: #B78453;
-  /* background-color: #61301A; */
+  background-image: linear-gradient(90deg, #B78453, #61301A);
   margin-top: 42px;
   border-radius: 100px;
 }
