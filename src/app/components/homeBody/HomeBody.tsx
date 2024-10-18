@@ -15,17 +15,20 @@ export default function HomeBody() {
       <Logo />
       <Title/>
       <InputBox 
-        placeholder="Eg 30000"
+        text="Salary £"
+        placeholder="E.g 30000"
       />
       <InputBox 
+        text="Working hours per week"
         placeholder="E.g 35"
       />
       <InputBox 
+        text="Time on bog (MM.SS)"
         placeholder="E.g 5.03"
       />
       <BogButton 
         onClick={pressButton}
-        text="Click Here"  
+        text="Calculate Earnings"  
       />
     </div>
   )

@@ -1,7 +1,17 @@
 .container {
+  /* border: 1px solid red; */
   width: 313px;
-  height: 54px;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.05px;
+  color: '#000000';
+  line-height: 21px;
 }
 
 .boxContainer{
@@ -10,7 +20,7 @@
   border-radius: 5px;
   width: 313px;
   height: 54px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   outline: none;
 }
 
@@ -20,6 +30,6 @@
   border-radius: 5px;
   width: 313px;
   height: 54px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   outline: none;
 }

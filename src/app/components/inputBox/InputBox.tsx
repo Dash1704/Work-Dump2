@@ -6,7 +6,8 @@ export default function InputBox(props: any) {
   const customStyle = focus ? styles.focusBoxContainer : styles.boxContainer
   
   return (
-    <div>
+    <div className={styles.container}>
+      <text className={styles.text}>{props.text}</text>
       <input 
         className={customStyle} 
         placeholder={props.placeholder}
