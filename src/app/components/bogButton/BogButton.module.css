@@ -6,3 +6,10 @@
   margin-top: 42px;
   border-radius: 100px;
 }
+
+.text{
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.05px;
+}

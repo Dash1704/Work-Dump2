@@ -17,7 +17,10 @@ export default function HomeBody() {
       <InputBox />
       <InputBox />
       <InputBox />
-      <BogButton onClick={pressButton}/>
+      <BogButton 
+        onClick={pressButton}
+        text="Click Here"  
+      />
     </div>
   )
 }
