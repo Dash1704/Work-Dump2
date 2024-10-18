@@ -1,13 +1,15 @@
 import Image from 'next/image'
+import styles from './Logo.module.css'
+
 
 export default function Logo() {
   return (
-    <div>
+    <div className={styles.logoContainer}>
       <Image 
-        src="/images/poo-emoji.png"
+        src="/images/pile-of-poo.png"
         alt="Website Logo"
-        width={300}
-        height={300}
+        width={200}
+        height={200}
       />
     </div>
   )
