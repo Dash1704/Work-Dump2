@@ -10,11 +10,10 @@ export default function Calculator(
 
     const twoPennies = (array: string[]) => {
       if (array[1] == undefined){
-        return;
-        // return `£${array[0]}.00`
+        return `0`
       } else {
         let pennies: string[] = array[1].split('');
-        return `£${array[0]}.${pennies[0]}` + `${pennies[1]}`
+        return `${array[0]}.${pennies[0]}` + `${pennies[1]}`
       };
     };
 

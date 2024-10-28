@@ -10,8 +10,19 @@
   border-radius: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: space-evenly; */
   align-items: center;
+}
 
+.introText {
+  font-weight: 700;
+  font-size: 30px;
+  color: #B78453;
+}
+
+.moneyResult{
+  font-weight: 700;
+  font-size: 70px;
+  color: #B78453;
 }
 

@@ -37,7 +37,7 @@ useEffect(() => {
   return(
     <div className={customStyles}>
       {visible && <div className={styles.overlay}></div>}
-      <Logo />
+      <Logo height={200} width={200}/>
       <Title/>
       <InputBox 
         text="Salary £"
@@ -60,10 +60,12 @@ useEffect(() => {
           setTime(value)
         }}
       />
+      {/* <div className={styles.buttonStyles}> */}
       <BogButton 
         onClick={pressButton}
         text="Calculate Earnings"  
       />
+      {/* </div> */}
       {visible && (
         <PopUpModal
           visible={visible}

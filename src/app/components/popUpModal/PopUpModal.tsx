@@ -1,6 +1,7 @@
 import styles from './PopUpModal.module.css'
 import { useState } from 'react';
 import BogButton from '../bogButton/BogButton';
+import Logo from '../logo/Logo';
 
 
 export default function PopUpModal ({ visible, onReset, result }: { 
@@ -27,8 +28,12 @@ export default function PopUpModal ({ visible, onReset, result }: {
 
     return(
       <div className={styles.modalContainer}>{visible}
+        <Logo height={100} width={100} />
+        <div className={styles.introText}>
+          You have earned:
+        </div>
         <div className={styles.moneyResult}>
-          {result}
+          £{result}
         </div>
         <BogButton 
           text={randomText()}
