@@ -60,12 +60,12 @@ useEffect(() => {
           setTime(value)
         }}
       />
-      {/* <div className={styles.buttonStyles}> */}
-      <BogButton 
-        onClick={pressButton}
-        text="Calculate Earnings"  
-      />
-      {/* </div> */}
+      <div className={styles.buttonStyles}>
+        <BogButton 
+          onClick={pressButton}
+          text="Calculate Earnings"  
+        />
+      </div>
       {visible && (
         <PopUpModal
           visible={visible}
