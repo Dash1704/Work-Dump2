@@ -29,6 +29,7 @@ useEffect(() => {
 
   return(
     <div className={customStyles}>
+      {visible && <div className={styles.overlay}></div>}
       <Logo />
       <Title/>
       <InputBox 
