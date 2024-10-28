@@ -2,7 +2,7 @@ export default function Calculator(
     salary: string | number, 
     hours: string | number, 
     time: string | number
-  ): string | number | void {
+  ): string | undefined {
     
     const calculation = (+salary / (+hours * 52) / 60) * +time;
     const convertToString = calculation.toString();
