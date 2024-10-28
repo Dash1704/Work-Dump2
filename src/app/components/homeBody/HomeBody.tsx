@@ -4,14 +4,31 @@ import Logo from "../logo/Logo";
 import Title from "../title/Title";
 import InputBox from "../inputBox/InputBox";
 import BogButton from "../bogButton/BogButton";
+import PopUpModal from "../popUpModal/PopUpModal";
 import styles from "./HomeBody.module.css"
+import { useState, useEffect } from "react";
 
 export default function HomeBody() {
+  
   const pressButton = () => {
     console.log('Click me bro')
+    setIsVisible(true)
   }
+
+  const resetVisibility = () => {
+    setIsVisible(false)
+  }
+
+const [visible, setIsVisible] = useState<boolean>(false)
+
+const customStyles = visible ? styles.pageContainerResult : styles.pageContainerNoResult
+
+useEffect(() => {
+  console.log("visable state changed", visible)
+}, [visible])
+
   return(
-    <div className={styles.pageContainer}>
+    <div className={customStyles}>
       <Logo />
       <Title/>
       <InputBox 
@@ -30,6 +47,12 @@ export default function HomeBody() {
         onClick={pressButton}
         text="Calculate Earnings"  
       />
+      {visible && (
+        <PopUpModal
+          visible={visible}
+          onReset={resetVisibility}
+        />
+      )}
     </div>
   )
 }

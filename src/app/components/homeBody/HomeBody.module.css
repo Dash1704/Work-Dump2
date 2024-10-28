@@ -1,5 +1,16 @@
-.pageContainer {
+.pageContainerNoResult {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.pageContainerResult {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3000;
 }
