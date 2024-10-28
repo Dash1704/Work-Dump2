@@ -5,6 +5,7 @@ import Title from "../title/Title";
 import InputBox from "../inputBox/InputBox";
 import BogButton from "../bogButton/BogButton";
 import PopUpModal from "../popUpModal/PopUpModal";
+import Calculator from "../calculator/Calculator";
 import styles from "./HomeBody.module.css"
 import { useState, useEffect } from "react";
 

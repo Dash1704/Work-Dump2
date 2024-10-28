@@ -21,6 +21,9 @@ export default function PopUpModal ({ visible, onReset }: { visible: boolean, on
 
   return(
     <div className={styles.modalContainer}>{visible}
+      <div className={styles.moneyResult}>
+        £5
+      </div>
       <BogButton 
         text={randomText()}
         onClick={pressButton}
