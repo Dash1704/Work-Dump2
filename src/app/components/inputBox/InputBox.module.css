@@ -33,3 +33,21 @@
   /* margin-top: 30px; */
   outline: none;
 }
+
+.errorMessage {
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.05px;
+  line-height: 21px;
+}
+
+.errorBoxContainer {
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    width: 313px;
+    height: 54px;
+    /* margin-top: 30px; */
+    outline: none;
+}
