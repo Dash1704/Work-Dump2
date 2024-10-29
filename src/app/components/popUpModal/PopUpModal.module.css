@@ -34,21 +34,10 @@
   margin-bottom: 60px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .modalContainer{
-    height: 60%;
-    width: 80%;
-  }
-} 
-
-@media (max-height: 840px) {
-  .modalContainer{
-    height: 40%;
-    width: 80%;
-    /* overflow: scroll; */
-    display: flex;
-    justify-content: flex-start;
-
+    height: 85%;
+    width: 85%;
   }
 
   .introText {
@@ -65,3 +54,7 @@
     margin-bottom: 30px;
   }
 } 
+
+
+
+  
