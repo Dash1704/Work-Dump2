@@ -13,7 +13,7 @@
   align-items: center;
   position: relative;
   z-index: 1000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .pageContainerResult {
@@ -27,4 +27,8 @@
 
 .buttonStyles{
   margin-top: 42px;
+}
+
+@media (max-width: 768px){
+
 }
