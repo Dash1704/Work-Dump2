@@ -12,6 +12,7 @@
   flex-direction: column;
   /* justify-content: space-around; */
   align-items: center;
+  overflow: hidden;
 }
 
 .introText {
@@ -33,3 +34,32 @@
   margin-bottom: 60px;
 }
 
+@media (max-width: 700px) {
+  .modalContainer{
+    height: 60%;
+    width: 80%;
+  }
+} 
+
+@media (max-height: 840px) {
+  .modalContainer{
+    height: 60%;
+    width: 80%;
+    /* overflow: scroll; */
+
+  }
+
+  .introText {
+    font-weight: 700;
+    font-size: 25px;
+    color: #B78453;
+    margin-top: 20px;
+  }
+
+  .moneyResult {
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+} 
