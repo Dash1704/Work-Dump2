@@ -10,3 +10,9 @@
 .logo {
   border: 1px solid blue;
 }
+
+@media (max-width: 768px) {
+  .logoContainer img {
+    width: 120px;
+  }
+}

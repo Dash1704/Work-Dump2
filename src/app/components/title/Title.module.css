@@ -13,3 +13,15 @@
   margin-left: 70px;
   margin-right: 70px;
 }
+
+@media (max-width: 768px){
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .bio {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

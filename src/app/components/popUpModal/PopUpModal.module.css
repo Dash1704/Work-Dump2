@@ -43,9 +43,11 @@
 
 @media (max-height: 840px) {
   .modalContainer{
-    height: 60%;
+    height: 40%;
     width: 80%;
     /* overflow: scroll; */
+    display: flex;
+    justify-content: flex-start;
 
   }
 
