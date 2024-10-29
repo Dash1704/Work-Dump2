@@ -1,10 +1,11 @@
 import {useState} from 'react'
 import styles from './InputBox.module.css'
 
-export default function InputBox({text, placeholder, onChange}: 
+export default function InputBox({text, placeholder, value, onChange}: 
   {
     text: string,
-    placeholder: string
+    placeholder: string,
+    value: string | number,
     onChange: (value: string) => void;
   }) {
     const [focus, setFocus] = useState<boolean>(false)
@@ -21,6 +22,7 @@ export default function InputBox({text, placeholder, onChange}:
         className={customStyle} 
         placeholder={placeholder}
         onChange={handleChange}
+        value={value}
         onFocus={() => setFocus(true)}  
         onBlur={() => setFocus(false)}
       />

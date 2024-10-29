@@ -22,17 +22,28 @@ export default function HomeBody() {
 
   const resetVisibility = () => {
     setIsVisible(false);
+    setTime('');
   }
 
 const [visible, setIsVisible] = useState<boolean>(false)
 
-
-
 const customStyles = visible ? styles.pageContainerResult : styles.pageContainerNoResult
 
 useEffect(() => {
-  console.log("visable state changed", visible)
+  console.log("visable state changed:", visible)
 }, [visible])
+
+useEffect(() => {
+  console.log("salary state changed:", salary)
+}, [salary])
+
+useEffect(() => {
+  console.log("hours state changed:", hours)
+}, [hours])
+
+useEffect(() => {
+  console.log("time state changed:", time)
+}, [time])
 
   return(
     <div className={customStyles}>
@@ -42,6 +53,7 @@ useEffect(() => {
       <InputBox 
         text="Salary £"
         placeholder="E.g 30000"
+        value={salary}
         onChange={(value: string | number) => {
           setSalary(value)
         }}
@@ -49,6 +61,7 @@ useEffect(() => {
       <InputBox 
         text="Working hours per week"
         placeholder="E.g 35"
+        value={hours}
         onChange={(value: string | number) => {
           setHours(value)
         }}
@@ -56,6 +69,7 @@ useEffect(() => {
       <InputBox 
         text="Time on bog (MM.SS)"
         placeholder="E.g 5.03"
+        value={time}
         onChange={(value: string | number) => {
           setTime(value)
         }}
