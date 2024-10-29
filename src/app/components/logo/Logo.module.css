@@ -15,4 +15,8 @@
   .logoContainer img {
     width: 120px;
   }
+
+  .logoContainer {
+    margin-top: 60px;
+  }
 }
