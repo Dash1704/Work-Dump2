@@ -7,7 +7,7 @@ import BogButton from "../bogButton/BogButton";
 import PopUpModal from "../popUpModal/PopUpModal";
 import Calculator from "../calculator/Calculator";
 import styles from "./HomeBody.module.css"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function HomeBody() {
   const [visible, setIsVisible] = useState<boolean>(false)

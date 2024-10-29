@@ -1,5 +1,4 @@
 import styles from './PopUpModal.module.css'
-import { useState } from 'react';
 import BogButton from '../bogButton/BogButton';
 import Logo from '../logo/Logo';
 
