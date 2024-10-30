@@ -22,7 +22,6 @@ export default function HomeBody() {
   const validateInputs = () => {
     let isValid = true;
 
-     // Validate salary (whole numbers only)
      if (!/^\d+$/.test(salary.toString())) {
       setSalaryError('Please enter a valid salary');
       isValid = false;
@@ -30,15 +29,13 @@ export default function HomeBody() {
       setSalaryError(null);
     }
 
-    // Validate week hours (whole numbers only)
-    if (!/^\d+$/.test(hours.toString())) {
+    if (!/^\d+(\.\d+)?$/.test(hours.toString())) {
       setHoursError('Please enter valid week hours');
       isValid = false;
     } else {
       setHoursError(null);
     }
 
-    // Validate time (allows decimals, e.g., 5.25)
     if (!/^\d+(\.\d+)?$/.test(time.toString())) {
       setTimeError('Please enter a valid time');
       isValid = false;
@@ -55,26 +52,6 @@ export default function HomeBody() {
   }
 
   const customStyles = visible ? styles.pageContainerResult : styles.pageContainerNoResult
-
-// useEffect(() => {
-//   console.log("visable state changed:", visible)
-// }, [visible])
-
-// useEffect(() => {
-//   console.log("salary state changed:", salary)
-// }, [salary])
-
-// useEffect(() => {
-//   console.log("hours state changed:", hours)
-// }, [hours])
-
-// useEffect(() => {
-//   console.log("time state changed:", time)
-// }, [time])
-
-console.log('salaryerror:', salaryError)
-console.log('hourserror:', hoursError)
-console.log('timeerror:', timeError)
 
   return(
     <div className={customStyles}>
