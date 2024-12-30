@@ -5,10 +5,9 @@ export default function Calculator(
   ): string | undefined {
     
     const calculation = (+salary / (+hours * 52) / 60) * +time;
-    const convertToString = calculation.toString();
-    const splitUp = convertToString.split('.');
+    const poundsAndPennies = calculation.toString().split('.')
 
-    const twoPennies = (array: string[]) => {
+    const displayEarnings = (array: string[]) => {
       if (array[1] == undefined){
         return `0`
       } else {
@@ -17,6 +16,6 @@ export default function Calculator(
       };
     };
 
-    const earnings: string | undefined = twoPennies(splitUp);
+    const earnings: string | undefined = displayEarnings(poundsAndPennies);
     return earnings
 }
