@@ -6,9 +6,9 @@ The website that lets you know how much money to have earned while taking care o
 
 Firstly, clone this repo and navigate to the directory.
 
-Secondly, install the dependencies.
+Secondly, install the dependencies:
 
-```
+```bash
 npm install
 # or
 yarn install
