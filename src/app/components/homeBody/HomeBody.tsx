@@ -32,7 +32,12 @@ export default function HomeBody() {
     if (!/^\d+(\.\d+)?$/.test(hours.toString())) {
       setHoursError('Please enter valid week hours');
       isValid = false;
-    } else {
+      
+    }else if(+hours > 168){
+      setHoursError("That's too many hours in the week!");
+      isValid = false;
+    } 
+    else {
       setHoursError(null);
     }
 
